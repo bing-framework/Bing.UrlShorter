@@ -63,7 +63,7 @@ namespace Bing.UrlShorter.Generators
                 seed = _random.Next(int.MaxValue) % ValidChars.Length;
             }
 
-            return sortUrl.ToString();
+            return new string(sortUrl);
         }
 
     }
